@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Video Example</title>
+  </head>
+  <body>
+    <h1>HTML5 Video Tag Example</h1>
+
+    <video
+      controls
+      autoplay
+      muted
+      loop
+      preload="auto"
+      width="640"
+      height="360"
+      poster="thumbnail.jpg"
+    >
+      <source src="video.mp4" type="video/mp4" />
+      <source src="video.webm" type="video/webm" />
+      <source src="video.ogg" type="video/ogg" />
+
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>
