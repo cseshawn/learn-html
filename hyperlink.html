@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperlinks in HTML</title>
+  </head>
+  <body>
+    <h1>Hyperlinks (Anchor Tags) Examples</h1>
+
+    <!-- Basic Link -->
+    <h2>Basic Link</h2>
+    <a href="https://www.google.com">Visit Google</a>
+
+    <!-- Link with target _blank (opens in new tab) -->
+    <h2>Link with target _blank</h2>
+    <a href="https://www.google.com" target="_blank">Open Google in new tab</a>
+
+    <!-- Link with target _self (default, opens in same tab) -->
+    <h2>Link with target _self</h2>
+    <a href="https://www.google.com" target="_self"
+      >Open Google in same tab (default)</a
+    >
+
+    <!-- Link with title (tooltip) -->
+    <h2>Link with title attribute</h2>
+    <a href="https://www.google.com" title="Go to Google">Google (hover me)</a>
+
+    <!-- Link to an email address -->
+    <h2>Email Link</h2>
+    <a href="mailto:info@example.com">Send Email</a>
+
+    <!-- Link to a phone number -->
+    <h2>Phone Link</h2>
+    <a href="tel:+1234567890">Call +1-234-567-890</a>
+
+    <!-- Link to a file (download) -->
+    <h2>Download Link</h2>
+    <a href="file.pdf" download>Download PDF file</a>
+    <a href="image.jpg" download="myimage.jpg">Download Image</a>
+
+    <!-- Link to a specific section (anchor) -->
+    <h2>Link to a section on the same page</h2>
+    <a href="#section1">Go to Section 1</a>
+    <br />
+    <a href="#section2">Go to Section 2</a>
+
+    <!-- Link to a section on another page -->
+    <h2>Link to a section on another page</h2>
+    <a href="page.html#section1">Go to Section 1 on another page</a>
+
+    <!-- Image as a link -->
+    <h2>Image as a Link</h2>
+    <a href="https://www.google.com">
+      <img src="https://via.placeholder.com/150" alt="Click to visit Google" />
+    </a>
+
+    <!-- Link with rel attribute -->
+    <h2>Link with rel attribute</h2>
+    <a href="https://www.google.com" rel="nofollow">No follow link</a>
+    <a href="https://www.google.com" rel="noopener">No opener</a>
+
+    <!-- Link with download attribute -->
+    <h2>Link with download</h2>
+    <a href="https://via.placeholder.com/200" download="placeholder.jpg"
+      >Download this image</a
+    >
+
+    <!-- Multiple links -->
+    <h2>Multiple Links</h2>
+    <a href="https://www.google.com">Google</a> |
+    <a href="https://www.youtube.com">YouTube</a> |
+    <a href="https://www.wikipedia.org">Wikipedia</a> |
+    <a href="https://www.github.com">GitHub</a>
+
+    <!-- Unordered list of links -->
+    <h2>List of Links</h2>
+    <ul>
+      <li><a href="https://www.google.com">Google</a></li>
+      <li><a href="https://www.youtube.com">YouTube</a></li>
+      <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+      <li><a href="https://www.github.com">GitHub</a></li>
+    </ul>
+
+    <!-- Section links (for same page navigation) -->
+    <h2 id="section1">Section 1</h2>
+    <p>This is section 1 content.</p>
+    <p><a href="#top">Back to top</a></p>
+
+    <h2 id="section2">Section 2</h2>
+    <p>This is section 2 content.</p>
+    <p><a href="#top">Back to top</a></p>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class and ID in HTML</title>
+  </head>
+  <body>
+    <h1>Class and ID Examples</h1>
+
+    <!-- ===== ID ===== -->
+    <h2>ID (Unique Identifier)</h2>
+
+    <!-- ID is unique - can be used only once per page -->
+    <p id="header">This paragraph has an ID called "header"</p>
+    <p id="intro">This paragraph has an ID called "intro"</p>
+    <p id="footer">This paragraph has an ID called "footer"</p>
+
+    <h3>ID with different elements</h3>
+    <h1 id="main-title">Main Title with ID</h1>
+    <div id="container">This div has an ID</div>
+    <p id="description">This paragraph has an ID</p>
+
+    <!-- ID for linking (anchor) -->
+    <h3>ID for linking to sections</h3>
+    <a href="#section1">Go to Section 1</a>
+    <br />
+    <a href="#section2">Go to Section 2</a>
+
+    <h4 id="section1">Section 1</h4>
+    <p>This section has ID "section1".</p>
+
+    <h4 id="section2">Section 2</h4>
+    <p>This section has ID "section2".</p>
+
+    <hr />
+
+    <!-- ===== CLASS ===== -->
+    <h2>Class (Group Identifier)</h2>
+
+    <!-- Class can be used multiple times on same page -->
+    <p class="highlight">This paragraph has class "highlight".</p>
+    <p class="highlight">This paragraph also has class "highlight".</p>
+    <p class="highlight">Another paragraph with same class.</p>
+
+    <h3>Class on different elements</h3>
+    <h2 class="red-text">Heading with class "red-text"</h2>
+    <p class="red-text">Paragraph with class "red-text"</p>
+    <span class="red-text">Span with class "red-text"</span>
+
+    <h3>Multiple classes on one element</h3>
+    <p class="highlight large-text">
+      This has two classes: "highlight" and "large-text"
+    </p>
+    <p class="highlight bold">This has classes "highlight" and "bold"</p>
+    <p class="large-text bold red-text">This has three classes</p>
+
+    <h3>Class with different elements</h3>
+    <div class="box">Div with class "box"</div>
+    <p class="box">Paragraph with class "box"</p>
+    <span class="box">Span with class "box"</span>
+
+    <hr />
+
+    <!-- ===== COMBINING CLASS AND ID ===== -->
+    <h2>Combining Class and ID</h2>
+
+    <p id="main" class="highlight large-text">This has both ID and classes.</p>
+    <div id="container" class="box highlight">Div with ID and classes.</div>
+
+    <!-- ===== PRACTICAL EXAMPLE ===== -->
+    <h2>Practical Example</h2>
+
+    <style>
+      /* CSS for demonstration (inline style) */
+      .red {
+        color: red;
+      }
+      .blue {
+        color: blue;
+      }
+      .green {
+        color: green;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .large {
+        font-size: 24px;
+      }
+      .bg-yellow {
+        background-color: yellow;
+        padding: 5px;
+      }
+      .bg-gray {
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+      #special {
+        font-size: 30px;
+        color: purple;
+        border: 2px solid black;
+        padding: 10px;
+      }
+      #unique {
+        background-color: lightblue;
+        padding: 15px;
+        border-radius: 10px;
+      }
+    </style>
+
+    <p class="red">Red text</p>
+    <p class="blue">Blue text</p>
+    <p class="green">Green text</p>
+    <p class="red bold">Red and bold</p>
+    <p class="blue large">Blue and large</p>
+    <p class="bg-yellow red">Yellow background with red text</p>
+    <p class="bg-gray bold large">Gray background, bold, large</p>
+
+    <div id="special">This has ID "special" with unique styling</div>
+    <div id="unique">This has ID "unique"</div>
+
+    <!-- ===== DIFFERENCE EXPLANATION ===== -->
+    <h2>Difference Between ID and Class</h2>
+
+    <ul>
+      <li><strong>ID</strong> is unique - can be used only once per page</li>
+      <li><strong>Class</strong> can be used multiple times on same page</li>
+      <li><strong>ID</strong> is used for specific, one-of-a-kind elements</li>
+      <li><strong>Class</strong> is used for grouping similar elements</li>
+      <li><strong>ID</strong> can be used in URLs for linking (anchor)</li>
+      <li>
+        <strong>Class</strong> is commonly used for styling multiple elements
+      </li>
+    </ul>
+
+    <!-- ===== SUMMARY TABLE ===== -->
+    <h2>Summary</h2>
+
+    <table border="1">
+      <tr>
+        <th>Feature</th>
+        <th>ID</th>
+        <th>Class</th>
+      </tr>
+      <tr>
+        <td>Uniqueness</td>
+        <td>Unique (one per page)</td>
+        <td>Can be used many times</td>
+      </tr>
+      <tr>
+        <td>Syntax</td>
+        <td>id="name"</td>
+        <td>class="name"</td>
+      </tr>
+      <tr>
+        <td>CSS selector</td>
+        <td>#name</td>
+        <td>.name</td>
+      </tr>
+      <tr>
+        <td>Multiple values</td>
+        <td>No (only one ID per element)</td>
+        <td>Yes (space-separated classes)</td>
+      </tr>
+      <tr>
+        <td>Anchor linking</td>
+        <td>Yes (href="#id")</td>
+        <td>No</td>
+      </tr>
+    </table>
+  </body>
+</html>

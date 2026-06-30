@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images in HTML</title>
+  </head>
+  <body>
+    <h1>Images in HTML</h1>
+
+    <!-- Basic Image -->
+    <h2>Basic Image</h2>
+    <img src="https://via.placeholder.com/300x200" alt="Placeholder image" />
+
+    <!-- Image with width and height -->
+    <h2>Image with width and height</h2>
+    <img
+      src="https://via.placeholder.com/300x200"
+      alt="Image with size"
+      width="300"
+      height="200"
+    />
+
+    <!-- Image with different sizes -->
+    <h2>Different Image Sizes</h2>
+    <img
+      src="https://via.placeholder.com/100"
+      alt="Small"
+      width="100"
+      height="100"
+    />
+    <img
+      src="https://via.placeholder.com/150"
+      alt="Medium"
+      width="150"
+      height="150"
+    />
+    <img
+      src="https://via.placeholder.com/200"
+      alt="Large"
+      width="200"
+      height="200"
+    />
+
+    <!-- Image with border -->
+    <h2>Image with border</h2>
+    <img
+      src="https://via.placeholder.com/200"
+      alt="With border"
+      style="border: 3px solid red"
+    />
+
+    <!-- Image with rounded corners -->
+    <h2>Image with rounded corners</h2>
+    <img
+      src="https://via.placeholder.com/200"
+      alt="Rounded"
+      style="border-radius: 20px"
+    />
+
+    <!-- Image as a link -->
+    <h2>Image as a Link</h2>
+    <a href="https://www.google.com">
+      <img src="https://via.placeholder.com/150" alt="Click to visit Google" />
+    </a>
+
+    <!-- Image with title (tooltip) -->
+    <h2>Image with title attribute</h2>
+    <img
+      src="https://via.placeholder.com/200"
+      alt="Hover me"
+      title="This is a tooltip"
+    />
+
+    <!-- Local image example (commented as it may not exist) -->
+    <h2>Local Image Example</h2>
+    <!-- <img src="photo.jpg" alt="My photo" /> -->
+
+    <!-- Image with alignment -->
+    <h2>Image with text wrapping</h2>
+    <p>
+      <img
+        src="https://via.placeholder.com/100"
+        alt="Left aligned"
+        style="float: left; margin-right: 10px"
+      />
+      This text wraps around the image on the left side. The image is floated
+      left.
+    </p>
+    <br clear="all" />
+    <p>
+      <img
+        src="https://via.placeholder.com/100"
+        alt="Right aligned"
+        style="float: right; margin-left: 10px"
+      />
+      This text wraps around the image on the right side. The image is floated
+      right.
+    </p>
+
+    <!-- Image with figure and figcaption -->
+    <h2>Image with Figure and Figcaption</h2>
+    <figure>
+      <img src="https://via.placeholder.com/300x200" alt="Sample image" />
+      <figcaption>Figure 1: A placeholder image with caption</figcaption>
+    </figure>
+  </body>
+</html>

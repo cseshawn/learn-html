@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Tables</title>
+  </head>
+  <body>
+    <h1>Accessible Table Examples</h1>
+
+    <!-- Accessible Table with caption -->
+    <h2>Table with caption and scope</h2>
+    <table border="1">
+      <caption>
+        Employee Contact Information
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Department</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">John Doe</th>
+          <td>IT</td>
+          <td>john@company.com</td>
+          <td>123-456-7890</td>
+        </tr>
+        <tr>
+          <th scope="row">Jane Smith</th>
+          <td>HR</td>
+          <td>jane@company.com</td>
+          <td>987-654-3210</td>
+        </tr>
+        <tr>
+          <th scope="row">Mike Johnson</th>
+          <td>Marketing</td>
+          <td>mike@company.com</td>
+          <td>555-123-4567</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Total Employees: 3</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Accessible Table with scope (row and col) -->
+    <h2>Table with scope attributes</h2>
+    <table border="1">
+      <caption>
+        Monthly Sales Report
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Q1</th>
+          <th scope="col">Q2</th>
+          <th scope="col">Q3</th>
+          <th scope="col">Q4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Laptops</th>
+          <td>$10,000</td>
+          <td>$12,000</td>
+          <td>$15,000</td>
+          <td>$18,000</td>
+        </tr>
+        <tr>
+          <th scope="row">Phones</th>
+          <td>$8,000</td>
+          <td>$9,000</td>
+          <td>$11,000</td>
+          <td>$13,000</td>
+        </tr>
+        <tr>
+          <th scope="row">Tablets</th>
+          <td>$5,000</td>
+          <td>$6,000</td>
+          <td>$7,000</td>
+          <td>$8,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Accessible Table with rowspan/colspan -->
+    <h2>Accessible Table with rowspan and colspan</h2>
+    <table border="1">
+      <caption>
+        Employee Skill Matrix
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Employee</th>
+          <th scope="col">Skill</th>
+          <th scope="col">Level</th>
+          <th scope="col">Years</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" rowspan="2">John</th>
+          <td>HTML</td>
+          <td>Expert</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Advanced</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="2">Jane</th>
+          <td>JavaScript</td>
+          <td>Expert</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Intermediate</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Accessible Table with id and headers -->
+    <h2>Table with id and headers attributes</h2>
+    <table border="1">
+      <caption>
+        Course Schedule
+      </caption>
+      <thead>
+        <tr>
+          <th id="time">Time</th>
+          <th id="mon">Monday</th>
+          <th id="tue">Tuesday</th>
+          <th id="wed">Wednesday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="t9" headers="time">9:00 AM</th>
+          <td headers="mon t9">Math</td>
+          <td headers="tue t9">Science</td>
+          <td headers="wed t9">English</td>
+        </tr>
+        <tr>
+          <th id="t10" headers="time">10:00 AM</th>
+          <td headers="mon t10">History</td>
+          <td headers="tue t10">Art</td>
+          <td headers="wed t10">Music</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Accessible Table with summary (deprecated but useful) -->
+    <h2>Table with summary (for older browsers)</h2>
+    <table border="1" summary="This table shows employee contact information">
+      <caption>
+        Employee Directory
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Role</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Alice</th>
+          <td>Manager</td>
+          <td>alice@company.com</td>
+        </tr>
+        <tr>
+          <th scope="row">Bob</th>
+          <td>Developer</td>
+          <td>bob@company.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Accessibility Tips (commented) -->
+    <!--
+        Accessibility Tips for Tables:
+        1. Always use <caption> to describe the table.
+        2. Use <th> for headers with scope="col" or scope="row".
+        3. Use <thead>, <tbody>, <tfoot> for structure.
+        4. Avoid using tables for layout.
+        5. Use id and headers for complex tables.
+        6. Provide clear and descriptive text.
+    -->
+  </body>
+</html>
